@@ -156,9 +156,34 @@ section {
   min-height: fit-content;
 }
 
+/* .section-container {
+  display: flex;
+} */
 .section-container {
   display: flex;
+  flex-direction: row; /* Keep image and text side-by-side */
+  align-items: center;
+  gap: 2rem; /* Space between image and text */
+  flex-wrap: wrap; /* Allows wrap on smaller screens */
 }
+
+.section_pic-container {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.about-details-container {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 /* PROFILE SECTION */
 
@@ -303,10 +328,35 @@ section {
   text-align: center;
 }
 
-.section-container {
+/* .section-container {
   gap: 4rem;
   height: 80%;
+} */
+.section-container {
+  display: flex;
+  flex-direction: row; /* Keep image and text side-by-side */
+  align-items: center;
+  gap: 2rem; /* Space between image and text */
+  flex-wrap: wrap; /* Allows wrap on smaller screens */
 }
+
+.section_pic-container {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.about-details-container {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 .section__pic-container {
   height: 400px;
